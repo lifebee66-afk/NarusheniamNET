@@ -16,7 +16,7 @@ func SQLinit() error {
     full_name VARCHAR(100) NOT NULL,
     phone_number VARCHAR(15) NOT NULL CHECK (LENGTH(phone_number) >= 11),
     email VARCHAR(255) UNIQUE NOT NULL CHECK (email LIKE '%@%.%'),
-);`
+	);`
 	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=5286 dbname=usersdb sslmode=disable")
 	if err != nil {
 		return err

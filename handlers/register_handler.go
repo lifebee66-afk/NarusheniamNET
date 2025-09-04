@@ -14,11 +14,11 @@ func NewHandler() {
 
 }
 
-func RegisterUser(w http.ResponseWriter, r *http.Request) {
+func RegisterUserHandler(w http.ResponseWriter, r *http.Request) {
 	var RegDto *dto.RegisterUserDTO
 	if err := json.NewDecoder(r.Body).Decode(&RegDto); err != nil {
 		http.Error(w, "failed decode json", http.StatusInternalServerError)
 		return
 	}
-	
+
 }
