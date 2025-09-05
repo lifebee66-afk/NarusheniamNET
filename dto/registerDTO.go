@@ -8,4 +8,5 @@ type RegisterUserDTO struct {
 	Full_name    string `json:"full_name" validate:"required,min=2,max=100"`
 	Phone_number string `json:"phone_number" validate:"required,min=11,max=15,numeric"`
 	Email        string `json:"email" validate:"required,email,max=255"`
+	Role         string `json:"role" validate:"omitempty,oneof=user admin"`
 }

@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Raleway;
+    src: url(font/raleway/static/Raleway-Regular.ttf);
+}
+
+header, footer {font-family: Raleway;}
+selection.page {min-height: 83vh;}
+div.cards_btn a {width: 48%;}

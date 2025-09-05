@@ -7,4 +7,5 @@ type User struct {
 	SFL      string
 	Number   int
 	Email    string
+	Role     string
 }
