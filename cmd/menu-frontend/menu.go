@@ -1,9 +1,15 @@
 package menufrontend
 
-import (
-	"net/http"
-)
+// func FrontendMenu() error {
+// 	buffer := new(bytes.Buffer)
+// 	templateParse, err := template.ParseFiles("./menu.html")
+// 	if err != nil {
+// 		return err
+// 	}
+// 	err := templateParse.ExecuteTemplate(buffer, "menu-user", map[string]string{
 
-func FrontendMenu(mux *http.ServeMux) {
-	
-}
+// 	})
+// 	if err != nil{
+// 		return err
+// 	}
+// }
